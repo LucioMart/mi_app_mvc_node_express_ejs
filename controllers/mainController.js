@@ -13,11 +13,6 @@ const controlador = {
         return res.render('index', {
             platos
         })
-    },
-    detalleMenu : (req, res) => {
-        return res.render('detalleMenu', {
-            platos
-        })
     }
 }
 

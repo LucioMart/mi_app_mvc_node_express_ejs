@@ -5,8 +5,10 @@ const router = express.Router()
 
 // ************ Controller Require ************
 
-const platosController = require('../controllers/mainController')
+const platosController = require('../controllers/platosController')
 
 /*** CREATE ONE PRODUCT ***/ 
 
-router.get('/detalle/:id/', platosController.detalleMenu )
+router.get('/detalle/:id/', platosController.detalle )
+
+module.exports = router

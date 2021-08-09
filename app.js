@@ -7,10 +7,11 @@ const app = express()
 
 // ************ WRITE YOUR CODE FROM HERE ************
 // ************ Route System require and use() ************
-const rutasMain = require('./routes/main')
+const rutaMain = require('./routes/main')
+const rutaPlatos = require('./routes/platos')
 
-app.use('/', rutasMain)
-app.use('/detalleMenu', rutasMain)
+app.use('/', rutaMain)
+app.use('/menuPlatos', rutaPlatos)
 
 // Necesario para los archivos estáticos en el folder /public
 app.use(express.static('public'))
