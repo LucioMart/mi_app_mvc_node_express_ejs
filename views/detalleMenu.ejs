@@ -19,7 +19,17 @@
         <div class="ps-col l6 ps-padding-large">
           <h1 class="ps-center"> <%= plato.name %> </h1>
           <br />
+
+          <% if(plato.description.length > 0) { %>
+
           <h4><%= plato.description %></h4>
+
+            <% } else {  %>
+
+              <h4>Plato tipico</h4>
+
+              <% } %>
+
           <p class="ps-text-grey">
             U$S <%= plato.price %>
           </p>
